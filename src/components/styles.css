@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.board {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+}
+
+.column {
+    background-color: #ebecf0;
+    border-radius: 8px;
+    width: 300px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.column-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.task-list {
+    min-height: 100px;
+}
+
+.task {
+    padding: 12px;
+    margin-bottom: 8px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.task:hover {
+    background-color: #f3f3f3;
+}
+
+.search-input {
+    margin: 10px;
+    padding: 5px;
+    width: 200px;
+}
+
+.board-actions button {
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+.nav-childs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.column-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.column-header button {
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+.delete-column-btn {
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-column-btn:hover {
+    background: #000;
+    color: white;
+}
+
+.search-input {
+    padding: .4rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.nav-btns {
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-btns:hover {
+    background: #000;
+    color: white;
+}
